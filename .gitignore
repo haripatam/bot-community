@@ -4,13 +4,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Environment variables & secrets (CRITICAL)
+# Environment variables & secrets (CRITICAL - DO NOT PUSH)
 .env
 .env.*
-creds-compact*
+creds-compact
+creds-compact.txt
 service_account.json
-credentials.json
 service_account
+credentials.json
 
 # WhatsApp / Baileys session files (CRITICAL - DO NOT LEAK)
 auth_info_baileys/
@@ -27,7 +28,7 @@ data/
 logs/
 *.txt
 
-# Docker related (ignore on GitHub)
+# Docker related
 Dockerfile
 docker-compose.yml
 .dockerignore
