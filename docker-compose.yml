@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  rigid-bot:
+    build: .
+    restart: unless-stopped
+    container_name: rigid-bot
+    environment:
+      - GOOGLE_CREDS_JSON=${GOOGLE_CREDS_JSON}
+      - WHATSAPP_NUMBER=${WHATSAPP_NUMBER}
+      - GOOGLE_SHEET_ID=${GOOGLE_SHEET_ID}
+    volumes:
+      - bot_auth:/app/auth_info_baileys
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+volumes:
+  bot_auth:

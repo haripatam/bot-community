@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment Variables (CRITICAL)
+.env
+.env.*
+
+# WhatsApp Session Keys (CRITICAL - DO NOT LEAK)
+auth_info_baileys/
+auth_whatsapp_web/
+
+# Google Sheets Keys (CRITICAL - DO NOT LEAK)
+service_account.json
+credentials.json
+
+# OS Specific
+.DS_Store
+Thumbs.db

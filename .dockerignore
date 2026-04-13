@@ -1,0 +1,7 @@
+node_modules
+.env
+service_account.json
+creds-compact.txt
+auth_info_baileys
+.git
+*.log
