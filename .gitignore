@@ -1,19 +1,38 @@
 # Dependencies
 node_modules/
-package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Environment Variables (CRITICAL)
+# Environment variables & secrets (CRITICAL)
 .env
 .env.*
-
-# WhatsApp Session Keys (CRITICAL - DO NOT LEAK)
-auth_info_baileys/
-auth_whatsapp_web/
-
-# Google Sheets Keys (CRITICAL - DO NOT LEAK)
+creds-compact*
 service_account.json
 credentials.json
+service_account
 
-# OS Specific
+# WhatsApp / Baileys session files (CRITICAL - DO NOT LEAK)
+auth_info_baileys/
+auth_whatsapp_web/
+creds.json
+*.json
+*.db
+*.sqlite
+session/
+data/
+
+# Logs
+*.log
+logs/
+*.txt
+
+# Docker related (ignore on GitHub)
+Dockerfile
+docker-compose.yml
+.dockerignore
+Procfile
+
+# OS files
 .DS_Store
 Thumbs.db
